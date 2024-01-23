@@ -28,7 +28,9 @@ it just broke."""
 # mutable
 value = 27
 valueTwo = 22
-value = 27 - 12 # the id changes here because the "value" gets a different value alltogether
+value = (
+    27 - 12
+)  # the id changes here because the "value" gets a different value alltogether
 
 print(id(value))
-print(id(27)) # the id is the same as the original because value is the same as 27.
+print(id(27))  # the id is the same as the original because value is the same as 27.
